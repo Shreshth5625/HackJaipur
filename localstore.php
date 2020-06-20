@@ -32,45 +32,45 @@ include("includes/main.php");
 
 <div class="col-md-12" ><!-- col-md-12 Starts -->
 
-<div class="services row"><!-- services row Starts -->
+<div class="stores row"><!-- stores row Starts -->
 
 <?php
 
-$get_services = "select * from services";
+$get_stores = "select * from store";
 
-$run_services = mysqli_query($con,$get_services);
+$run_stores = mysqli_query($con,$get_stores);
 
-while($row_services = mysqli_fetch_array($run_services)){
+while($row_stores = mysqli_fetch_array($run_stores)){
 
-$service_id = $row_services['service_id'];
+$store_id = $row_stores['store_id'];
 
-$service_title = $row_services['service_title'];
+$store_title = $row_stores['store_title'];
 
-$service_image = $row_services['service_image'];
+$store_image = $row_stores['store_image'];
 
-$service_desc = $row_services['service_desc'];
+$store_desc = $row_stores['store_desc'];
 
-$service_button = $row_services['service_button'];
+$store_button = $row_stores['store_button'];
 
-$service_url = $row_services['service_url'];
+$store_url = $row_stores['store_url'];
 
 ?>
 
 <div class="col-md-4 col-sm-6 box"><!-- col-md-4 col-sm-6 box Starts -->
 
-<img src="admin_area/services_images/<?php echo $service_image; ?>" class="img-responsive">
+<img src="admin_area/store_images/<?php echo $store_image; ?>" class="img-responsive">
 
-<h2 align="center"> <?php echo $service_title; ?> </h2>
+<h2 align="center"> <?php echo $store_title; ?> </h2>
 
 <p>
-<?php echo $service_desc; ?>
+<?php echo $store_desc; ?>
 </p>
 
 <center>
 
-<a href="<?php echo $service_url; ?>" class="btn btn-primary">
+<a href="<?php echo $store_url; ?>" class="btn btn-primary">
 
-<?php echo $service_button; ?>
+<?php echo $store_button; ?>
 
 </a>
 
@@ -80,7 +80,7 @@ $service_url = $row_services['service_url'];
 
 <?php } ?>
 
-</div><!-- services row Ends -->
+</div><!-- stores row Ends -->
 
 </div><!-- col-md-12 Ends -->
 
