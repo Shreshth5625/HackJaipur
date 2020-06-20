@@ -93,20 +93,20 @@
 		<div class="container clearfix">
 
 			<div class="banner-award">
-				<span>Award winner</span><br> Fashion awards 2016
+				<span>Award winner</span><br> Food awards 2018
 			</div>
 
 			<div class="banner-social">
-				<a href="#" class="banner-social__link">
+				<a href="http://www.facebook.com" class="banner-social__link" target="_blank">
 				<i class="icon-facebook"></i>
 			</a>
-				<a href="#" class="banner-social__link">
+				<a href="http://www.twitter.com" class="banner-social__link" target="_blank">
 				<i class="icon-twitter"></i>
 			</a>
-				<a href="#" class="banner-social__link">
+				<a href="http://www.instagram.com" class="banner-social__link" target="_blank">
 				<i class="icon-instagram"></i>
 			</a>
-				<a href="#" class="banner-social__link">
+				<a href="http://www.pinterest.com" class="banner-social__link" target="_blank">
 				<i class="icon-pinterest-circled"></i>
 			</a>
 			</div>
@@ -118,15 +118,15 @@
 		<div class="container clearfix">
 
 			<div class="copyright">
-				&copy; 2018 Avenue Fashion&trade;
+				&copy; 2020 Frippery&trade;
 			</div>
 
 			<div class="developer">
-				Dev by Yasser Dalouzi
+				Dev by Code Catalysts
 			</div>
 
 			<div class="designby">
-				Design by Yasser Dalouzi
+				Design by Code Catalysts
 			</div>
 		</div>
 	</div>
