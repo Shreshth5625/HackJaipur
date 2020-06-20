@@ -68,7 +68,7 @@ $store_url = $row_stores['store_url'];
 
 <center>
 
-<a href="<?php echo $store_url; ?>" class="btn btn-primary">
+<a href="<?php echo $store_url; ?>" class="btn btn-primary" target="_blank">
 
 <?php echo $store_button; ?>
 

@@ -66,8 +66,13 @@ if(!isset($_SESSION['customer_email'])){
       <div class="container clearfix">
 
         <div class="logo">
+<<<<<<< HEAD
           <a class="logo__link" href="index.php">
           <h1>FRIPPERY</h1>
+=======
+          <a class="logo__link" href="/ecommerce/index.php">
+          <h1>FOOD AND FURIOUS</h1>
+>>>>>>> 4fbe3518b321525604f6b6d3cb26b5f8f5883755
           </a>
         </div>
 
