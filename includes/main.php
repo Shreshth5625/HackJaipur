@@ -73,12 +73,12 @@ if(!isset($_SESSION['customer_email'])){
         <nav class="main-nav">
           <ul class="categories">
 
-            <li class="categories__item">
-              <a class="categories__link" href="#">
+    
+          <li class="categories__item">
+              <a class="categories__link categories__link--active" href="/ecommerce/shop.php">
               PRODUCTS
-               
               </a>
-              </li>
+            </li>
 
             <li class="categories__item">
               <a class="categories__link" href="#">
@@ -87,11 +87,14 @@ if(!isset($_SESSION['customer_email'])){
               </a>
             </li>
 
+            
+
             <li class="categories__item">
-              <a class="categories__link categories__link--active" href="/ecommerce/shop.php">
-               CONTACT US
+              <a class="categories__link" href="#">
+             CONTACT US
+               
               </a>
-            </li>
+              </li>
 
             <li class="categories__item">
               <a class="categories__link" href="/ecommerce/localstore.php">
