@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 20, 2020 at 04:50 PM
+-- Generation Time: Jun 20, 2020 at 09:20 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -121,10 +121,10 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`cat_id`, `cat_title`, `cat_top`, `cat_image`) VALUES
-(2, 'Feminine', 'no', 'zinta_preity.jpg'),
-(3, 'Kids', 'no', 'image10.jpg'),
-(4, 'Others', 'yes', 'cat_image.jpg'),
-(5, 'Men', 'yes', 'image11.jpg');
+(2, 'Italian', 'yes', 'italian_category.jpg'),
+(3, 'Chinese', 'yes', 'chinese_category.jpg'),
+(4, 'Indian', 'no', 'indian_category.jpg'),
+(5, 'Others', 'no', 'others_category.jpg');
 
 -- --------------------------------------------------------
 
@@ -195,7 +195,6 @@ CREATE TABLE `customers` (
 
 INSERT INTO `customers` (`customer_id`, `customer_name`, `customer_email`, `customer_pass`, `customer_country`, `customer_city`, `customer_contact`, `customer_address`, `customer_image`, `customer_ip`, `customer_confirm_code`) VALUES
 (2, 'user', 'user@ave.com', '123', 'United State', 'New York', '0092334566931', 'new york', 'user.jpg', '::1', ''),
-(3, 'akshat', 'akshat@gmail.com', '123', 'India', 'Jaipur', '1234567890', 'random', 'ET6_1XNXkAUcBgr.jfif', '::1', '80598114'),
 (4, 'Akshat', 'akshatchaturvedi17@gmail.com', '123', 'India', 'Jaipur', '1234567890', 'jaipur', 'IMG_20191030_214102_780.jpeg', '::1', '1017503290');
 
 -- --------------------------------------------------------
@@ -384,10 +383,10 @@ CREATE TABLE `product_categories` (
 --
 
 INSERT INTO `product_categories` (`p_cat_id`, `p_cat_title`, `p_cat_top`, `p_cat_image`) VALUES
-(4, 'Coats', 'no', 'image3.jpg'),
-(5, 'T-Shirts', 'no', 'image2.jpg'),
-(6, 'Sweater', 'no', 'sweater.jpg'),
-(7, 'jackets', 'yes', 'jacket.jpg');
+(4, 'Cakes', 'no', 'cake_category.jpg'),
+(5, 'Pastas', 'no', 'pasta_category.jpg'),
+(6, 'Pizzas', 'no', 'pizza_category.jpg'),
+(7, 'Burgers', 'yes', 'burger_category.jpg');
 
 -- --------------------------------------------------------
 
@@ -409,9 +408,9 @@ CREATE TABLE `store` (
 --
 
 INSERT INTO `store` (`store_id`, `store_title`, `store_image`, `store_desc`, `store_button`, `store_url`) VALUES
-(1, 'Mumbai Store', 'store_1.jpg', '<p style=\"text-align: center;\"><strong>A1-504,Kolahpur market,Thane</strong></p>\r\n<p>The Mumbai store is spread across 22 acres and provide a huge storage capacity for storing the food items. It is equipped with a 1000L storage container to keep the fruits and vegetable. The Mumbai outlet is the main delivery centre for delivering fruits and vegetables.</p>', 'View Map', 'http://www.thedailylux.com/ecommerce'),
-(2, 'Delhi Store', 'store_2.jpg', '<p style=\"text-align: center;\"><strong>Sector 12,South Delhi</strong></p>\r\n<p>The Delhi store is spread across 18 acres and is also the main headquarter for the following shopping kart. It is the only store with an inbuilt multilevel freezer of at least 500 L storage capacity and is the main source for storing dairy items, meats etc. The Delhi outlet is the main delivery centre for delivery centre for delivering meats and dairy products.</p>', 'View Map', 'http://www.thedailylux.com/ecommerce'),
-(3, 'Kolkata Store', 'store_3.jpg', '<p style=\"text-align: center;\"><strong>B3-522,near mira market,Belgoria</strong></p>\r\n<p>The Kolkata store is the one opened recently and is quite small consisting of 12-acre land. Moreover this centre mainly deals with storing imported food items and spices. It is the only store with the licence of selling imported good all across India from the 3 stores. </p>', 'View Map', 'http://www.thedailylux.com/ecommerce');
+(1, 'Mumbai Store', 'store_1.jpg', '<p style=\"text-align: center;\"><strong>A1-504,Kolahpur market,Thane</strong></p>\r\n<p>The Mumbai store is spread across 22 acres and provide a huge storage capacity for storing the food items. It is equipped with a 1000L storage container to keep the fruits and vegetable. The Mumbai outlet is the main delivery centre for delivering fruits and vegetables.</p>', 'View Map', 'https://www.google.com/maps/place/Mumbai,+Maharashtra/@19.0820391,72.6009776,10z/data=!3m1!4b1!4m5!3m4!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!8m2!3d19.0759837!4d72.8776559'),
+(2, 'Delhi Store', 'store_2.jpg', '<p style=\"text-align: center;\"><strong>Sector 12,South Delhi</strong></p>\r\n<p>The Delhi store is spread across 18 acres and is also the main headquarter for the following shopping kart. It is the only store with an inbuilt multilevel freezer of at least 500 L storage capacity and is the main source for storing dairy items, meats etc. The Delhi outlet is the main delivery centre for delivery centre for delivering meats and dairy products.</p>', 'View Map', 'https://www.google.com/maps/place/Delhi/@28.6466772,76.8130593,10z/data=!3m1!4b1!4m5!3m4!1s0x390cfd5b347eb62d:0x37205b715389640!8m2!3d28.7040592!4d77.1024902'),
+(3, 'Kolkata Store', 'store_3.jpg', '<p style=\"text-align: center;\"><strong>B3-522,near mira market,Belgoria</strong></p>\r\n<p>The Kolkata store is the one opened recently and is quite small consisting of 12-acre land. Moreover this centre mainly deals with storing imported food items and spices. It is the only store with the licence of selling imported good all across India from the 3 stores. </p>', 'View Map', 'https://www.google.com/maps/place/Kolkata,+West+Bengal/@22.6757521,88.0495217,10z/data=!3m1!4b1!4m5!3m4!1s0x39f882db4908f667:0x43e330e68f6c2cbc!8m2!3d22.572646!4d88.363895');
 
 -- --------------------------------------------------------
 
