@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<script src="index.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -66,13 +67,8 @@ if(!isset($_SESSION['customer_email'])){
       <div class="container clearfix">
 
         <div class="logo">
-<<<<<<< HEAD
           <a class="logo__link" href="index.php">
           <h1>FRIPPERY</h1>
-=======
-          <a class="logo__link" href="/ecommerce/index.php">
-          <h1>FOOD AND FURIOUS</h1>
->>>>>>> 4fbe3518b321525604f6b6d3cb26b5f8f5883755
           </a>
         </div>
 
@@ -85,18 +81,10 @@ if(!isset($_SESSION['customer_email'])){
               PRODUCTS
               </a>
             </li>
+           
 
             <li class="categories__item">
-              <a class="categories__link" href="#">
-               ABOUT
-               
-              </a>
-            </li>
-
-            
-
-            <li class="categories__item">
-              <a class="categories__link" href="#">
+              <a class="categories__link" href="#foot">
              CONTACT US
                
               </a>

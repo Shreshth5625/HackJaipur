@@ -71,7 +71,7 @@ include("includes/main.php");
                 <a href="#" class="footer-nav__link">Shipping &amp; returns</a>
               </li>
               <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Secure shipping</a>
+                <a href="#" class="footer-nav__link">Secure Delivery</a>
               </li>
               <li class="footer-nav__item">
                 <a href="#" class="footer-nav__link">Testimonials</a>
@@ -79,9 +79,7 @@ include("includes/main.php");
               <li class="footer-nav__item">
                 <a href="#" class="footer-nav__link">Award winning</a>
               </li>
-              <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Ethical trading</a>
-              </li>
+              
             </ul>
           </div>
 
@@ -113,8 +111,8 @@ include("includes/main.php");
           <div class="footer-nav__col footer-nav__col--contacts">
             <div class="footer-nav__heading">Contact details</div>
             <address class="address">
-            Head Office: Avenue Fashion.<br>
-            180-182 Regent Street, London.
+            Head Office: Frippery<br>
+            Block-A, Frippery.Co, Jaipur.
           </address>
             <div class="phone">
               Telephone:
@@ -122,7 +120,7 @@ include("includes/main.php");
             </div>
             <div class="email">
               Email:
-              <a href="mailto:support@yourwebsite.com" class="email__addr">support@yourwebsite.com</a>
+              <a href="mailto:support@yourwebsite.com" class="email__addr">support@frippery.com</a>
             </div>
           </div>
 
@@ -132,8 +130,8 @@ include("includes/main.php");
       <div class="banners">
         <div class="container clearfix">
 
-          <div class="banner-award">
-            <span>Award winner</span><br> Fashion awards 2016
+        <div class="banner-award">
+            <span>BECOME A CHEF !</span><br> Register to upload your cooking videos
           </div>
 
           <div class="banner-social">
@@ -162,11 +160,11 @@ include("includes/main.php");
           </div>
 
           <div class="developer">
-            Developement by Code Catalysts
+            Developers: Code Catalysts
           </div>
 
           <div class="designby">
-            Design by Code Catalysts
+            Design: Code Catalysts
           </div>
 
         </div>
