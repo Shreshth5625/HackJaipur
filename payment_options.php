@@ -19,7 +19,10 @@ $customer_id = $row_customer['customer_id'];
 
 <p class="lead text-center">
 
-<a href="order.php?c_id=<?php echo $customer_id; ?>">Pay Off line</a>
+
+<a href="order.php?c_id=<?php echo $customer_id; ?>"><button type="button" class="btn btn-outline-light btn-lg download-button">Cash on Delivery</button></a>
+<br>
+<a href="order.php?c_id=<?php echo $customer_id; ?>"><button type="button" class="btn btn-outline-light btn-lg download-button">Pay with Ether</button></a>
 
 </p>
 

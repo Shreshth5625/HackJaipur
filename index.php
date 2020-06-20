@@ -158,15 +158,15 @@ include("includes/main.php");
         <div class="container clearfix">
 
           <div class="copyright">
-            &copy; 2018 Avenue Fashion&trade;
+            &copy; 2020 Frippery
           </div>
 
           <div class="developer">
-            Dev by Yasser Dalouzi
+            Developement by Code Catalysts
           </div>
 
           <div class="designby">
-            Design by Yasser Dalouzi
+            Design by Code Catalysts
           </div>
 
         </div>

@@ -444,12 +444,17 @@ img {
 }
 
 .page-header__bottomline .logo {
-  float: left
+    float: left;
+    
 }
 
 .page-header__bottomline .logo__link {
   margin-top: 38px;
-  display: block
+  display: block;
+  color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
 }
 
 .page-header__bottomline .main-nav {
@@ -903,7 +908,7 @@ img {
   padding-top: 300px;
   padding-bottom: 140px;
   color: #fff;
-  background: #666 url(../images/photo0.png) no-repeat;
+  background: #666 url(../images/saltnpepper.jpg) no-repeat;
   background-size: cover;
   background-position: 50%
 }

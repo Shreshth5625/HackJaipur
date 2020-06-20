@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -66,7 +67,7 @@ if(!isset($_SESSION['customer_email'])){
 
         <div class="logo">
           <a class="logo__link" href="index.php">
-          <h1>FOOD AND FURIOUS</h1>
+          <h1>FRIPPERY</h1>
           </a>
         </div>
 
