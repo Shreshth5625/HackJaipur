@@ -100,39 +100,6 @@ Product Url Example : navy-blue-t-shirt
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Select A Manufacturer </label>
-
-<div class="col-md-6" >
-
-<select class="form-control" name="manufacturer"><!-- select manufacturer Starts -->
-
-<option> Select A Manufacturer </option>
-
-<?php
-
-$get_manufacturer = "select * from manufacturers";
-$run_manufacturer = mysqli_query($con,$get_manufacturer);
-while($row_manufacturer= mysqli_fetch_array($run_manufacturer)){
-$manufacturer_id = $row_manufacturer['manufacturer_id'];
-$manufacturer_title = $row_manufacturer['manufacturer_title'];
-
-echo "<option value='$manufacturer_id'>
-$manufacturer_title
-</option>";
-
-}
-
-?>
-
-</select><!-- select manufacturer Ends -->
-
-</div>
-
-</div><!-- form-group Ends -->
-
-
-<div class="form-group" ><!-- form-group Starts -->
-
 <label class="col-md-3 control-label" > Product Category </label>
 
 <div class="col-md-6" >
@@ -396,7 +363,6 @@ if(isset($_POST['submit'])){
 $product_title = $_POST['product_title'];
 $product_cat = $_POST['product_cat'];
 $cat = $_POST['cat'];
-$manufacturer_id = $_POST['manufacturer'];
 $product_price = $_POST['product_price'];
 $product_desc = $_POST['product_desc'];
 $product_keywords = $_POST['product_keywords'];
@@ -425,7 +391,7 @@ move_uploaded_file($temp_name1,"product_images/$product_img1");
 move_uploaded_file($temp_name2,"product_images/$product_img2");
 move_uploaded_file($temp_name3,"product_images/$product_img3");
 
-$insert_product = "insert into products (p_cat_id,cat_id,manufacturer_id,date,product_title,product_url,product_img1,product_img2,product_img3,product_price,product_psp_price,product_desc,product_features,product_video,product_keywords,product_label,status) values ('$product_cat','$cat','$manufacturer_id',NOW(),'$product_title','$product_url','$product_img1','$product_img2','$product_img3','$product_price','$psp_price','$product_desc','$product_features','$product_video','$product_keywords','$product_label','$status')";
+$insert_product = "insert into products (p_cat_id,cat_id,date,product_title,product_url,product_img1,product_img2,product_img3,product_price,product_psp_price,product_desc,product_features,product_video,product_keywords,product_label,status) values ('$product_cat','$cat',NOW(),'$product_title','$product_url','$product_img1','$product_img2','$product_img3','$product_price','$psp_price','$product_desc','$product_features','$product_video','$product_keywords','$product_label','$status')";
 
 $run_product = mysqli_query($con,$insert_product);
 

@@ -172,44 +172,6 @@ $(document).ready(function(){
 
   function getProducts(){
 
-  // Manufacturers Code Starts
-
-    var sPath = '';
-
-var aInputs = $('li').find('.get_manufacturer');
-
-var aKeys = Array();
-
-var aValues = Array();
-
-iKey = 0;
-
-$.each(aInputs,function(key,oInput){
-
-if(oInput.checked){
-
-aKeys[iKey] =  oInput.value
-
-};
-
-iKey++;
-
-});
-
-if(aKeys.length>0){
-
-var sPath = '';
-
-for(var i = 0; i < aKeys.length; i++){
-
-sPath = sPath + 'man[]=' + aKeys[i]+'&';
-
-}
-
-}
-
-// Manufacturers Code ENDS
-
 // Products Categories Code Starts
 
 var aInputs = Array();
@@ -326,13 +288,6 @@ $('.pagination').html(data);
    }
 
    // getProducts Function Code Ends
-
-$('.get_manufacturer').click(function(){
-
-getProducts();
-
-});
-
 
   $('.get_p_cat').click(function(){
 

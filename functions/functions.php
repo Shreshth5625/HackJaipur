@@ -99,16 +99,6 @@ $pro_img1 = $row_products['product_img1'];
 
 $pro_label = $row_products['product_label'];
 
-$manufacturer_id = $row_products['manufacturer_id'];
-
-$get_manufacturer = "select * from manufacturers where manufacturer_id='$manufacturer_id'";
-
-$run_manufacturer = mysqli_query($db,$get_manufacturer);
-
-$row_manufacturer = mysqli_fetch_array($run_manufacturer);
-
-$manufacturer_name = $row_manufacturer['manufacturer_title'];
-
 $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
@@ -164,12 +154,6 @@ echo "
 
 <div class='text' >
 
-<center>
-
-<p class='btn btn-primary'> $manufacturer_name </p>
-
-</center>
-
 <hr>
 
 <h3><a href='$pro_url' >$pro_title</a></h3>
@@ -216,24 +200,6 @@ function getProducts(){
 global $db;
 
 $aWhere = array();
-
-/// Manufacturers Code Starts ///
-
-if(isset($_REQUEST['man'])&&is_array($_REQUEST['man'])){
-
-foreach($_REQUEST['man'] as $sKey=>$sVal){
-
-if((int)$sVal!=0){
-
-$aWhere[] = 'manufacturer_id='.(int)$sVal;
-
-}
-
-}
-
-}
-
-/// Manufacturers Code Ends ///
 
 /// Products Categories Code Starts ///
 
@@ -305,16 +271,6 @@ $pro_img1 = $row_products['product_img1'];
 
 $pro_label = $row_products['product_label'];
 
-$manufacturer_id = $row_products['manufacturer_id'];
-
-$get_manufacturer = "select * from manufacturers where manufacturer_id='$manufacturer_id'";
-
-$run_manufacturer = mysqli_query($db,$get_manufacturer);
-
-$row_manufacturer = mysqli_fetch_array($run_manufacturer);
-
-$manufacturer_name = $row_manufacturer['manufacturer_title'];
-
 $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
@@ -371,12 +327,6 @@ echo "
 
 <div class='text' >
 
-<center>
-
-<p class='btn btn-primary'> $manufacturer_name </p>
-
-</center>
-
 <hr>
 
 <h3><a href='$pro_url' >$pro_title</a></h3>
@@ -431,26 +381,6 @@ global $db;
 $aWhere = array();
 
 $aPath = '';
-
-/// Manufacturers Code Starts ///
-
-if(isset($_REQUEST['man'])&&is_array($_REQUEST['man'])){
-
-foreach($_REQUEST['man'] as $sKey=>$sVal){
-
-if((int)$sVal!=0){
-
-$aWhere[] = 'manufacturer_id='.(int)$sVal;
-
-$aPath .= 'man[]='.(int)$sVal.'&';
-
-}
-
-}
-
-}
-
-/// Manufacturers Code Ends ///
 
 /// Products Categories Code Starts ///
 

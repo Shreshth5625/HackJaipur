@@ -248,29 +248,6 @@ INSERT INTO `enquiry_types` (`enquiry_id`, `enquiry_title`) VALUES
 (2, 'Technical Support'),
 (3, 'Price Concern');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `manufacturers`
---
-
-CREATE TABLE `manufacturers` (
-  `manufacturer_id` int(10) NOT NULL,
-  `manufacturer_title` text NOT NULL,
-  `manufacturer_top` text NOT NULL,
-  `manufacturer_image` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `manufacturers`
---
-
-INSERT INTO `manufacturers` (`manufacturer_id`, `manufacturer_title`, `manufacturer_top`, `manufacturer_image`) VALUES
-(2, 'Adidas', 'no', 'image2.jpg'),
-(3, 'Nike', 'no', 'image3.jpg'),
-(4, 'Philip Plein', 'no', 'manufacturer.jpg'),
-(5, 'Lacost', 'no', 'image6.jpg'),
-(6, 'Gucci', 'yes', 'akshay-kumar.jpg');
 
 -- --------------------------------------------------------
 
@@ -336,7 +313,6 @@ CREATE TABLE `products` (
   `product_id` int(10) NOT NULL,
   `p_cat_id` int(10) NOT NULL,
   `cat_id` int(10) NOT NULL,
-  `manufacturer_id` int(10) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `product_title` text NOT NULL,
   `product_url` text NOT NULL,
@@ -357,7 +333,7 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`product_id`, `p_cat_id`, `cat_id`, `manufacturer_id`, `date`, `product_title`, `product_url`, `product_img1`, `product_img2`, `product_img3`, `product_price`, `product_psp_price`, `product_desc`, `product_features`, `product_video`, `product_keywords`, `product_label`, `status`) VALUES
+INSERT INTO `products` (`product_id`, `p_cat_id`, `cat_id`, `date`, `product_title`, `product_url`, `product_img1`, `product_img2`, `product_img3`, `product_price`, `product_psp_price`, `product_desc`, `product_features`, `product_video`, `product_keywords`, `product_label`, `status`) VALUES
 (1, 1, 5, 3, '2020-06-20 10:48:40', 'Fluffy Pancakes', 'fluffy-pancakes', 'Fluffy-Pancakes_1.jpg', 'Fluffy-Pancakes_2.jpg', 'Fluffy-Pancakes_3.jpg', 70, 50, '<p>Combine milk with vinegar in a medium bowl and set aside for 5 minutes to sour.\r\nCombine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk egg and butter into soured milk. Pour the flour mixture into the wet ingredients and whisk until lumps are gone.\r\nHeat a large skillet over medium heat, and coat with cooking spray. Pour 1/4 cupfuls of batter onto the skillet, and cook until bubbles appear on the surface. Flip with a spatula, and cook until browned on the other side.</p>', '<p>3/4 cup milk ,\r\n2 tablespoons white vinegar ,\r\n1 cup all-purpose flour ,\r\n2 tablespoons white sugar ,\r\n1 teaspoon baking powder ,\r\n1/2 teaspoon baking soda ,\r\n1/2 teaspoon salt ,\r\n1 egg ,\r\n2 tablespoons butter, melted ,\r\ncooking spray ,</p>', '<iframe width=\"854\" height=\"480\" src=\"https://www.youtube.com/embed/BxjtpdWeGtI\" frameborder=\"0\" allowfullscreen></iframe>', 'Cakes', 'Sale', 'product'),
 (2, 1, 5, 2, '2020-06-20 10:48:48', 'Too Much Chocolate Cake', 'too-much-chocolate-cake', 'too-much-chocolate-cake_1.jpg', 'too-much-chocolate-cake_2.jpg', 'too-much-chocolate-cake_3.jpg', 69, 45, '<p>Preheat oven to 350 degrees F (175 degrees C).\r\nIn a large bowl, mix together the cake and pudding mixes, sour cream, oil, beaten eggs and water. Stir in the chocolate chips and pour batter into a well greased 12 cup bundt pan.\r\nBake for 50 to 55 minutes, or until top is springy to the touch and a wooden toothpick inserted comes out clean. Cool cake thoroughly in pan at least an hour and a half before inverting onto a plate If desired, dust the cake with powdered sugar.</p>', '      1 (18.25 ounce) package devil\'s food cake mix ,\r\n      1 (5.9 ounce) package instant chocolate pudding mix ,\r\n      1 cup sour cream ,\r\n      1 cup vegetable oil ,\r\n      4 eggs ,\r\n      1/2 cup warm water ,\r\n      2 cups semisweet chocolate chips ,\r\n', '<iframe width=\"854\" height=\"480\" src=\"https://www.youtube.com/embed/qRswlmADRa8\" frameborder=\"0\" allowfullscreen></iframe>', 'Cakes', 'Gift', 'product'),
 (3, 3, 2, 6, '2020-06-20 10:48:48', 'Buffalo Style Chicken Pizza', 'buffalo-style-chicken-pizza', 'buffalo-chicken-pizza_1.jpg', 'buffalo-chicken-pizza_2.jpg', 'buffalo-chicken-pizza_3.jpg', 98, 0, '<p>Preheat oven to 425 degrees F (220 degrees C).\r\nIn a medium bowl combine the cubed chicken, melted butter and hot sauce. Mix well. Spread whole bottle of salad dressing over crust, then top with chicken mixture and sprinkle with shredded cheese.\r\nBake in preheated oven until crust is golden brown and cheese is bubbly, about 5 to 10 minutes. Let set a few minutes before slicing, and serve.</p>', '      3 skinless, boneless chicken breast halves - cooked and cubed ,\r\n      2 tablespoons butter, melted ,\r\n      1 (2 ounce) bottle hot sauce ,\r\n      1 (8 ounce) bottle blue cheese salad dressing ,\r\n      1 (16 inch) prepared pizza crust ,\r\n      1 (8 ounce) package shredded mozzarella cheese ', '<iframe width=\"854\" height=\"480\" src=\"https://www.youtube.com/embed/qRswlmADRa8\" frameborder=\"0\" allowfullscreen></iframe>', 'Pizzas', 'New', 'product'),
@@ -522,12 +498,6 @@ ALTER TABLE `enquiry_types`
   ADD PRIMARY KEY (`enquiry_id`);
 
 --
--- Indexes for table `manufacturers`
---
-ALTER TABLE `manufacturers`
-  ADD PRIMARY KEY (`manufacturer_id`);
-
---
 -- Indexes for table `payments`
 --
 ALTER TABLE `payments`
@@ -626,12 +596,6 @@ ALTER TABLE `customer_orders`
 --
 ALTER TABLE `enquiry_types`
   MODIFY `enquiry_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `manufacturers`
---
-ALTER TABLE `manufacturers`
-  MODIFY `manufacturer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `payments`
