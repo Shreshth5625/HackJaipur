@@ -39,7 +39,7 @@ $pro_title = $row_product['product_title'];
 
 $pro_price = $row_product['product_price'];
 
-$pro_desc = $row_product['product_desc'];
+$pro_desc = $row_product['product_recipe'];
 
 $pro_img1 = $row_product['product_img1'];
 
@@ -51,7 +51,7 @@ $pro_label = $row_product['product_label'];
 
 $pro_psp_price = $row_product['product_psp_price'];
 
-$pro_features = $row_product['product_features'];
+$pro_features = $row_product['product_ingredients'];
 
 $pro_video = $row_product['product_video'];
 
@@ -547,7 +547,7 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 if($status == "product"){
 
-echo "Product Description";
+echo "Product Recipe";
 
 }
 else{
@@ -562,13 +562,13 @@ echo "Bundle Description";
 
 <a class="btn btn-primary tab" style="margin-bottom:10px;" href="#features" data-toggle="tab"><!-- btn btn-primary tab Starts -->
 
-Features
+Ingredients
 
 </a><!-- btn btn-primary tab Ends -->
 
 <a class="btn btn-primary tab" style="margin-bottom:10px;" href="#video" data-toggle="tab"><!-- btn btn-primary tab Starts -->
 
-Sounds and Videos
+Tutorial Videos
 
 </a><!-- btn btn-primary tab Ends -->
 
