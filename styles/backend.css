@@ -880,6 +880,18 @@ img {
 
 /*cover*/
 
+.nero1 {
+  padding-top: 180px;
+  padding-bottom: 140px;
+  font-family: 'montserratlight', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #666 url("../images/shop.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .nero {
   padding-top: 160px;
   padding-bottom: 140px;
@@ -887,7 +899,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
-  background: #666 url("../images/banner-ave.jpg") no-repeat;
+  background: #666 url("../images/bakery.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -896,12 +908,13 @@ img {
   font-size: 48px;
 }
 
-.nero__bold {
+.nero__bold { 
   font-weight: 700;
 }
 
 .nero__text {
   font-size: 30px;
+  
 }
 
 .hero {

@@ -28,21 +28,21 @@
 				<div class="footer-nav__col footer-nav__col--whybuy">
 					<div class="footer-nav__heading">Why buy from us</div>
 					<ul class="footer-nav__list">
+					<li class="footer-nav__item">
+                		<a href="#" class="footer-nav__link">Best Cooking Tutorials</a>
+              			</li>
 						<li class="footer-nav__item">
 							<a href="#" class="footer-nav__link">Shipping &amp; returns</a>
 						</li>
 						<li class="footer-nav__item">
 							<a href="#" class="footer-nav__link">Secure shipping</a>
 						</li>
+						
 						<li class="footer-nav__item">
 							<a href="#" class="footer-nav__link">Testimonials</a>
 						</li>
-						<li class="footer-nav__item">
-							<a href="#" class="footer-nav__link">Award winning</a>
-						</li>
-						<li class="footer-nav__item">
-							<a href="#" class="footer-nav__link">Ethical trading</a>
-						</li>
+						
+						
 					</ul>
 				</div>
 
@@ -74,8 +74,8 @@
 				<div class="footer-nav__col footer-nav__col--contacts">
 					<div class="footer-nav__heading">Contact details</div>
 					<address class="address">
-					Head Office: Avenue Fashion.<br>
-					180-182 Regent Street, London.
+					Head Office: Frippery<br>
+            		Block-A, Frippery.Co, Jaipur.
 				</address>
 					<div class="phone">
 						Telephone:
@@ -83,7 +83,7 @@
 					</div>
 					<div class="email">
 						Email:
-						<a href="mailto:support@yourwebsite.com" class="email__addr">support@yourwebsite.com</a>
+						<a href="mailto:support@yourwebsite.com" class="email__addr">support@frippery.com</a>
 					</div>
 				</div>
 
@@ -94,7 +94,8 @@
 			<div class="container clearfix">
 
 				<div class="banner-award">
-					<span>Award winner</span><br> Food awards 2018
+				<span>BECOME A CHEF !</span><br> Register to upload your cooking videos
+
 				</div>
 
 				<div class="banner-social">

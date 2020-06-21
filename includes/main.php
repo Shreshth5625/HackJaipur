@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-<script src="index.js" charset="utf-8"></script>
+
 </head>
 
 <body>
@@ -77,7 +77,7 @@ if(!isset($_SESSION['customer_email'])){
 
     
           <li class="categories__item">
-              <a class="categories__link categories__link--active" href="/ecommerce/shop.php">
+              <a class="categories__link " href="/ecommerce/shop.php">
               PRODUCTS
               </a>
             </li>

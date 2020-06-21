@@ -38,7 +38,8 @@ include("includes/main.php");
 
     </div><!-- container Ends -->
     <!-- FOOTER -->
-    <footer class="page-footer">
+    <footer class="page-footer" id="foot">
+    <script src="index.js" charset="utf-8"></script>
 
       <div class="footer-nav">
         <div class="container clearfix">
@@ -67,6 +68,9 @@ include("includes/main.php");
           <div class="footer-nav__col footer-nav__col--whybuy">
             <div class="footer-nav__heading">Why buy from us</div>
             <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Best Cooking Tutorials</a>
+              </li>
               <li class="footer-nav__item">
                 <a href="#" class="footer-nav__link">Shipping &amp; returns</a>
               </li>
@@ -74,11 +78,12 @@ include("includes/main.php");
                 <a href="#" class="footer-nav__link">Secure Delivery</a>
               </li>
               <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Testimonials</a>
+                <a href="#" class="footer-nav__link">Best Cooking Tutorials</a>
               </li>
               <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Award winning</a>
+                <a href="#" class="footer-nav__link">Testimonials</a>
               </li>
+              
               
             </ul>
           </div>
