@@ -89,7 +89,7 @@ else {
 
 <p style="font-size:15px; font-weight:bold;">
 
-Product Url Example : navy-blue-t-shirt
+Product Url Example : choco-lava-cake
 
 </p>
 
@@ -253,19 +253,19 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <li class="active">
 
-<a data-toggle="tab" href="#description"> Product Description </a>
+<a data-toggle="tab" href="#description"> Product Recipe </a>
 
 </li>
 
 <li>
 
-<a data-toggle="tab" href="#features"> Product Features </a>
+<a data-toggle="tab" href="#features"> Product Ingredients </a>
 
 </li>
 
 <li>
 
-<a data-toggle="tab" href="#video"> Sounds And Videos </a>
+<a data-toggle="tab" href="#video"> Tutorial Videos </a>
 
 </li>
 
