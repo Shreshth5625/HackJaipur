@@ -91,6 +91,13 @@ if(!isset($_SESSION['customer_email'])){
               </li>
 
             <li class="categories__item">
+              <a class="categories__link" href="/ecommerce/contact-us.php">
+             GET A QUOTE
+               
+              </a>
+              </li>
+
+            <li class="categories__item">
               <a class="categories__link" href="/ecommerce/localstore.php">
                 Local Stores
               </a>

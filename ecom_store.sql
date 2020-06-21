@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2020 at 10:06 AM
+-- Generation Time: Jun 21, 2020 at 10:29 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -238,6 +238,31 @@ INSERT INTO `enquiry_types` (`enquiry_id`, `enquiry_title`) VALUES
 (1, 'Order and Delivery Support'),
 (2, 'Technical Support'),
 (3, 'Price Concern');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `get_a_quote`
+--
+
+CREATE TABLE `get_a_quote` (
+  `id` int(11) NOT NULL,
+  `c_name` varchar(100) NOT NULL,
+  `c_subject` varchar(200) NOT NULL,
+  `c_email` varchar(100) NOT NULL,
+  `c_phone_no` varchar(20) NOT NULL,
+  `c_msg` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `get_a_quote`
+--
+
+INSERT INTO `get_a_quote` (`id`, `c_name`, `c_subject`, `c_email`, `c_phone_no`, `c_msg`) VALUES
+(1, 'Jaydeep Nasit', 'About Hacking', 'jaydeepnashit@gmail.com', '8523697412', 'Hey Email Me!'),
+(2, 'Hacker Group', 'Hacking', 'helloe@sdhsg.com', '7412316547', 'hey'),
+(3, 'Akshat', 'random', 'akshat@gmail.com', '1234456778', 'hello testing'),
+(4, 'Akshat', 'ran', 'ksdn@gmail.com', '2131391398', 'heyya');
 
 -- --------------------------------------------------------
 
@@ -488,6 +513,12 @@ ALTER TABLE `enquiry_types`
   ADD PRIMARY KEY (`enquiry_id`);
 
 --
+-- Indexes for table `get_a_quote`
+--
+ALTER TABLE `get_a_quote`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `payments`
 --
 ALTER TABLE `payments`
@@ -586,6 +617,12 @@ ALTER TABLE `customer_orders`
 --
 ALTER TABLE `enquiry_types`
   MODIFY `enquiry_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `get_a_quote`
+--
+ALTER TABLE `get_a_quote`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `payments`
