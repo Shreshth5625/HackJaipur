@@ -896,14 +896,14 @@ img {
 
 /*cover*/
 
-.nero {
+.nero{
   padding-top: 160px;
   padding-bottom: 140px;
   font-family: 'montserratlight', sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
-  background: #666 url("../images/banner-ave.jpg") no-repeat;
+  background: #666 url("../customer_images/cart.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }

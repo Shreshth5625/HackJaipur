@@ -1,4 +1,4 @@
-</head>
+  </head>
 <body>
 
   <header class="page-header">
@@ -65,9 +65,9 @@
       <div class="container clearfix">
 
         <div class="logo">
-          <a class="logo__link" href="/ecommerce/index.php">
-            <img class="logo__img" src="images/logo.png" alt="Avenue fashion logotype" width="237" height="19">
-          </a>
+          <a class="logo__link" href="../index.php">
+              <h1>FLIPPERY</h1>
+        </a>
         </div>
 
         <nav class="main-nav">
