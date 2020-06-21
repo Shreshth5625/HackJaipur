@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Import database Database/ecom_store.sql.
 - Open Your browser put inside URL: "http://localhost/ecommerce-website/”
 - To Login as admin : ”http://localhost/ecommerce-website/admin_area”
-  Login Credentials for admin:
+- Login Credentials for admin:
   Username:akshatchaturvedi17@gmail.com
   Password:123
 
